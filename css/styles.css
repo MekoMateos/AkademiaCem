@@ -1,0 +1,246 @@
+/* Custom Fonts*/
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior:smooth;
+
+}
+
+:root {
+  --bg-color:#F2EEE9;
+  --text-color:#22100d;
+  --second-color:#685f72;
+  --main-color:#af458c;
+  --big-font:3.8rem;
+  --h2-font:2.6rem;
+  --p-font:1.2rem;
+}
+
+body {
+  background: linear-gradient(300deg, hsla(320, 43%, 48%, 1) 0%, rgb(155, 185, 207) 37%, rgb(244, 246, 247) 100%);
+  color:var(--text-color);
+}
+
+/* Navbar Design */
+
+header {
+  position:fixed;
+  width:100%;
+  top:0;
+  right:0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  background:transparent;
+  padding:23px 13%;
+  transition: all .40s ease;
+}
+
+.logo img {
+  margin-top: -10px;
+  height:auto;
+  width:80px;
+  max-width: 100%;
+}
+
+.navbar {
+  display:flex ;
+  padding-top:10px;
+}
+
+.navbar a {
+   color: var(--text-color);
+   font-weight: 600;
+   font-size: var(--p-font);
+   padding:10px 22px;
+   transition: all .40s ease;
+}
+
+.navbar a:hover {
+  color:var(--main-color);
+}
+
+
+/* Navbar Design Icons*/
+
+.header-icons{
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.header-icons i {
+  margin-left: 10px;
+  font-size: 24px;
+  color:var(--text-color);
+  transition: all .40s ease;
+  margin-right: 15px;
+}
+
+.header-icons i:hover {
+ color:var(--main-color);
+ transform: scale(1.2);
+
+}
+
+#menu-icon {
+  font-size: 34px;
+  color:var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+
+}
+
+/* Home Section */
+
+section {
+  padding:180px 13%;
+}
+
+.home {
+position:relative;
+height: 100vh;
+width:80%;
+background: url(/Images/Logo/1CEM-Logo-01-274x300.png);
+background-size:auto;
+background-position: right;
+background-repeat: no-repeat;
+display: grid;
+grid-template-columns: repeat(1,1fr);
+gap: 1rem;
+align-items:center;
+
+}
+
+.home-text h1 {
+  font-size: var(--big-font);
+  margin:15px 0 15px;
+  color:#347bb3;
+}
+
+.home-text h6 {
+  color:var(--main-color);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.home-text p {
+  color:var(--second-color);
+  font-size: var(--p-font);
+  font-weight: 500;
+  width:80%;
+}
+
+header.sticky {
+  background:var(--bg-color);
+  box-shadow: 0px 4px 15px rgb(0 0 0 /8%);
+}
+
+/* Container Section */
+
+.container {
+  width:95%;
+  border-radius: 10px;
+  margin:10px auto;
+  background: var(--bg-color);
+  display: flex;
+  box-shadow: -4px 4px 4px #347bb3;
+  
+
+  
+}
+
+.container .container-img {
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:30%;
+}
+
+.container .container-text h4 {
+
+font-weight: bold;
+  font-size: 30px;
+  line-height: 29px;
+  color:var(--main-color);
+  letter-spacing: 0.02em;
+  text-align: center;
+  padding:40px 0;
+}
+
+.container .container-text p {
+  padding:20px 50px;
+  text-align: center;
+  color:var(--second-color);
+  font-size:var(--p-font);
+  width:500px;
+}
+
+/*---- Courses----*/
+
+.courses {
+  width:95%;
+  margin:2rem auto;
+  border-radius:10px;
+ 
+}
+
+.courses-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(400px, auto));
+  gap:2rem;
+  align-items: center;
+  margin-top: 4rem;
+  cursor: pointer;
+  
+}
+
+.row {
+  background: rgb(213, 219, 219);
+  padding:0px 0px 20px 0px;
+  border-radius: 20px;
+  transition: all .40s ease;
+}
+.row:hover {
+  transform: translateY(-15px);
+}
+
+.row img {
+  width:100%;
+  height:auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.courses-text {
+  padding:35px 20px;
+}
+
+.courses-text h5 {
+  color:var(--main-color);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.courses-text h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34px;
+  margin:15px 0 15px;
+  transition: all .40s ease;
+}
+
+
+
+
+
