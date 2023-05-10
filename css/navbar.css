@@ -1,0 +1,102 @@
+/* Custom Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+
+}
+
+:root {
+  --bg-color: #F2EEE9;
+  --text-color: #22100d;
+  --second-color: #685f72;
+  --main-color: #af458c;
+  --big-font: 3.8rem;
+  --h2-font: 2.6rem;
+  --p-font: 1.2rem;
+}
+
+body {
+  background: linear-gradient(260deg, hsla(320, 43%, 48%, 1) 0%, rgb(155, 185, 207) 37%, rgb(244, 246, 247) 100%);
+  color: var(--text-color);
+  height: 100%;
+}
+
+/* Navbar Design */
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  padding: 23px 13%;
+  transition: all .40s ease;
+}
+
+.logo img {
+  margin-top: -10px;
+  height: auto;
+  width: 80px;
+  max-width: 100%;
+}
+
+.navbar {
+  display: flex;
+  padding-top: 10px;
+}
+
+.navbar a {
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: var(--p-font);
+  padding: 10px 22px;
+  transition: all .40s ease;
+}
+
+.navbar a:hover {
+  color: var(--main-color);
+}
+
+
+/* Navbar Design Icons*/
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.header-icons i {
+  margin-left: 10px;
+  font-size: 24px;
+  color: var(--text-color);
+  transition: all .40s ease;
+  margin-right: 15px;
+}
+
+.header-icons i:hover {
+  color: var(--main-color);
+  transform: scale(1.2);
+
+}
+
+#menu-icon {
+  font-size: 34px;
+  color: var(--text-color);
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+
+}
