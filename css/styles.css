@@ -26,42 +26,63 @@
  
 /* Home Section */
 
-section {
-  padding: 180px 13%;
-}
-
 .home {
-  position: relative;
-  height: 70vh;
+  height: 100vh;
+  width: 100%;
+  padding-top: 100px;
+  padding-left: 100px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: space-between;
-  margin-top: 230px;
- 
-  
+  justify-content: center;
+  align-items: center;
 }
 
-.home-text h1 {
-  font-size: var(--big-font);
-  margin: 15px 0 15px;
-  color: #347bb3;
+.about .main img {
+  width: 580px;
+  max-width: 100%;
+  height: auto;
+  padding: 0 10px;
 }
 
-.home-text h6 {
+.all-text {
+  width: 900px;
+  max-width: 100%;
+  padding: 0 10px;
+}
+
+.main {
+  width: 1290px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.all-text h4 {
+  font-size: 20px;
   color: var(--main-color);
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  font: weight 500;
+  margin-bottom: 10px;
 }
 
-.home-text p {
-  color: var(--second-color);
+.all-text h1 {
+  color: #347bb3;
+  font-size: var(--big-font);
+  font-weight: 700;
+  margin-bottom: 20px;
+
+}
+
+.all-text p {
   font-size: var(--p-font);
-  font-weight: 500;
-  width: 80%;
+  color: var(--second-color);
+  line-height: 33px;
+  margin-bottom: 35px;
+  width:700px;
 }
-
 /*---- Courses----*/
 
 .center-text {
@@ -185,6 +206,7 @@ section {
   width: 250px;
   aspect-ratio: 3/2;
 }
+
 
 /* Kontaktoni Content */
 

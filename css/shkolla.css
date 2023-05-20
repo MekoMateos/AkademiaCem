@@ -129,6 +129,8 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 200px;
+  margin-top: 200px;
 
 }
 
@@ -200,4 +202,36 @@
     border-bottom: 1px solid black;
     border-radius: 0%;
   }
+}
+
+/* Footer */
+
+#container-footer {
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #1f4c6f;
+  color: #c59f80;
+
+}
+
+#container-footer {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+#footer-body {
+  width: 616px;
+  padding: 5px 14px 5px 14px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#footer {
+  
+  position: absolute;
+  bottom: 0;
+  width: 644px;
+  height: 20px;
+  margin: 0 auto;
 }
